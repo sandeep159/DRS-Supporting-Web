@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>DRS</title>
+        <link rel="stylesheet" type="text/css" href="Assets//login.css">
+       
+
+        <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+        <!-- <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script> -->
+        <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script> 
+        <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-database.js"></script>
+        
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+             https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-analytics.js"></script>
+
+        
+        
+        
+         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+           integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+           crossorigin=""/>
+             <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+           integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+           crossorigin=""></script>
+            
+        
+        
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+             https://firebase.google.com/docs/web/setup#available-libraries -->
+                <!-- <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script> -->
+         <script src="Assets//bin//lib//login.js"></script>    
+
+    </head>
+
+    <body>
+
+        <!-- <div class="signup">
+            <input type="submit" onclick="adduser()" value="Sign Up">
+
+        </div> -->
+
+        <div class="navbar">
+            <div class="dropdown">
+              <button class="dropbtn"><img src="Assets//img//plusbox.jpg" class="signup"><br><br><br><b>Signup</b>
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <input type="text" id="signupid" name="userid" placeholder="Enter Username"><br>
+                <input type="password" id="pwd" name="pass" placeholder="Enter Password"><br>
+                <input type="password" id="cpwd" name="cnpass" placeholder="conform Password"><br>
+                <input type="submit" onclick="adduser()" value="Sign Up">
+
+
+              </div>
+            </div> 
+          </div>
+
+
+
+
+        <div class="loginbox">
+
+            <img src="Assets//img//av2e.png" class="avatar">
+            <h1>Login Here</h1>
+            
+            <!-- <form> -->
+                <p>Username</p>
+                <input type="text" id="loginid" name="user" placeholder="Enter Username">
+                <p>Password</p>
+                <input type="password" id="loginpass" name="pwd" placeholder="Enter Password">
+                <input type="submit" onclick="check()" value="Login">
+            <!-- </form> -->
+        </div>
+
+
+
+        <!-- for sign in  -->
+
+        <script>
+          firebase.auth().onAuthStateChanged(function(user)
+          { 
+            if(user){
+              window.document.location="main.html";
+            }
+
+          });
+
+        </script>
+
+    </body>
+            
+    </html>

@@ -1,0 +1,31 @@
+{
+  "Zambia": {
+    "123456": {
+      "contactName": "Office of the President",
+      "description": "office of president",
+      "fax": "-",
+      "location": "Lusaka",
+      "postalAddress": "-",
+      "tel": "123456",
+      "country": "Zambia"
+    },
+    "222222": {
+      "contactName": "National Strategy Office",
+      "description": "national strategy",
+      "fax": "-",
+      "location": "Gaborone",
+      "postalAddress": "-",
+      "tel": "222222",
+      "country": "Zambia"
+    },
+    "444900": {
+      "contactName": "State House",
+      "description": "State president, Ministry of",
+      "fax": "-",
+      "location": "Lusaka",
+      "postalAddress": "-",
+      "tel": "444900",
+      "country": "Zambia"
+    }
+  }
+}

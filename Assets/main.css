@@ -1,0 +1,189 @@
+body{
+    margin: 0;
+    padding: 0;
+    background:#75CFF0;
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+/* .overlay{
+    width:300px;
+    height:200px;
+    background: white;
+    position: absolute;
+    right:0;
+    overflow: hidden;
+    transition: .5 ease;
+}
+.overlay p{
+    margin: 0;
+    padding: 100px;
+    top:100px;
+    overflow: hidden;
+}
+
+
+.avt{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top:20px;
+} */
+
+.avatar{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top:20px;
+    right:2%;
+}
+
+
+.content{
+    width: 500px;
+    height: 400px;
+    background:white;
+    border: 1px solid rgb(93, 191, 221);
+    color: #000;
+    top: 50%;
+    left: 70%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 30px 70px;
+}
+
+.content p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.content input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.content input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #000;
+    font-size: 16px;
+}
+
+.content input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: rgb(93, 191, 221);
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.content input[type="submit"]:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    color: #000;
+}
+#mapid { 
+    width: 500px;
+    height: 400px;
+    top: 20%;
+    left: 10%;
+    position: fixed;
+}
+
+.logout{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    left: calc(95% - 50px);
+  }
+  
+  
+  .navbar {
+      overflow: hidden;
+      font-family: sans-serif;
+    }
+     
+    .dropdown {
+      float:right;
+      overflow: hidden;
+    }
+    
+    .dropdown .dropbtn {
+      font-size: 16px;  
+      border: none;
+      outline: none;
+      color:  #000;
+      padding: 14px 16px;
+      padding-right:140px;
+      background-color: inherit;
+      font-family: inherit;
+    }
+    
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color:transparent;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: relative;
+      background-color: transparent;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      width: 60px;
+      height: 60px;
+      padding: 50px 10px;
+    }
+  
+    .dropdown-content p{
+      font-weight: bold;
+      left: calc(80% - 50px);
+  }
+  
+  /* .dropdown-content input{
+      width: 100%;
+      margin-bottom: 20px;
+  }
+  
+  .dropdown-content input[type="text"], input[type="password"]{
+      border: none;
+      border-bottom: 1px solid #000;
+      background: transparent;
+      outline: none;
+      height: 40px;
+      color: #000;
+      font-size: 16px;
+  } */
+  
+  .dropdown-content input[type="submit"]{
+      border: none;
+      outline: none;
+      height: 40px;
+      background:rgb(93, 191, 221);
+      font-size: 18px;
+      border-radius: 20px;
+      position: relative;
+      height:40px;
+      width: 100px;
+      left: calc(50% - 50px);
+  }
+  
+  .dropdown-content input[type="submit"]:hover{
+      cursor: pointer;
+      opacity: 0.8;
+      color: #000;
+  }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }

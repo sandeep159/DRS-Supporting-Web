@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>DRS</title>
+        <link rel="stylesheet" type="text/css" href="Assets//main.css">
+        
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-analytics.js"></script>
+
+
+ <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+
+</head>
+    <body>
+          <div class="navbar">
+            <div class="dropdown">
+              <button class="dropbtn"><img src="Assets//img//av3.jpg" class="logout">
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <p>dr.kulu</p>
+                <input type="submit" onclick="removeuser()" value="Logout">
+              </div>
+            </div> 
+          </div>  
+
+      <div id="mapid"></div>
+      
+      <div class= "content">
+                <p>Disease Name</p>
+                <input type="text" name="disease"  id="name" placeholder="Enter The Disease Outbreaked">
+                <p>Description</p>
+                <input type="text" name="description" id="des" placeholder="Description.......">
+                <p>location</p>
+                <input type="text" name="lattitude" id="lat" placeholder="location">
+                <input type="submit" onclick="add()" value="Update">
+      </div>
+          <script src = "Assets//bin//lib//app.js"></script>
+
+    </body>
+
+
+
+</html>
